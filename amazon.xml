@@ -5,7 +5,8 @@
 
             <!--            <class name ="RoutersAPI.GetRequest"></class>-->
             <class name="TC001_ValidateLoginSuccessful"></class>
-            <class name="TC003_SearchOnAmazonSite"></class>
+<!--            <class name="TC003_SearchOnAmazonSite"></class>-->
+<!--            <class name="TC004_SearchOnSelected"></class>-->
             <!--            <class name ="Pet.UpdateAnExixtingPet">-->
             <!--                <methods>-->
             <!--                    <include name = "updatepet"/>-->

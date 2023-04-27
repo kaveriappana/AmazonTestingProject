@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.logging.Logger;
+
 public class SearchOnAmazon {
     WebDriver driver;
     private By searchtext = By.cssSelector("input[placeholder='Search Amazon']");
@@ -14,16 +16,19 @@ public class SearchOnAmazon {
 
     private By link =By.linkText("Apple iPhone 12 Mini, 128GB, Black - Unlocked (Renewed)");
 
+    Logger logger = Logger.getLogger("SearchOnAmazon.class");
     public SearchOnAmazon(WebDriver driver)
     {
         this.driver = driver;
     }
 
     public void searchtext(String text){
+        logger.info("Enter searching product");
         driver.findElement(searchtext).sendKeys(text);
 
     }
     public void clickonbutton(){
+        logger.info("click on search button");
         driver.findElement(button).click();
     }
     public void lowandhighprice(String data1,String data2 ){

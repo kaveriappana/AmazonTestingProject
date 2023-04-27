@@ -10,13 +10,6 @@
           <include name="testSuccessfulLogin"/>
         </methods>
       </class> <!-- TC001_ValidateLoginSuccessful -->
-      <class name="TC003_SearchOnAmazonSite">
-        <methods>
-          <include name="close"/>
-          <include name="SearchSuccessfull"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- TC003_SearchOnAmazonSite -->
     </classes>
   </test> <!-- C:\Users\kaveri.appana\IdeaProjects\AmazonTestingProject\pom.xml(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
