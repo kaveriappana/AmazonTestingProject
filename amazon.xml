@@ -1,17 +1,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name ="All Test Suite">
+<suite name ="All Test Suite" parallel="tests" thread-count="2">
     <test verbose="2" preserve-order="true" name="C:\Users\kaveri.appana\IdeaProjects\AmazonTestingProject\pom.xml">
-        <classes>
+        <parameter name="browsername" value="Chrome"></parameter>
 
-            <!--            <class name ="RoutersAPI.GetRequest"></class>-->
+        <classes>
             <class name="TC001_ValidateLoginSuccessful"></class>
-<!--            <class name="TC003_SearchOnAmazonSite"></class>-->
-<!--            <class name="TC004_SearchOnSelected"></class>-->
-            <!--            <class name ="Pet.UpdateAnExixtingPet">-->
-            <!--                <methods>-->
-            <!--                    <include name = "updatepet"/>-->
-            <!--                </methods>-->
-            <!--            </class>-->
+        </classes>
+    </test>
+    <test  name="TestonEdgeBrowser">
+        <parameter name="browsername" value="Edge"></parameter>
+
+        <classes>
+            <class name="TC001_ValidateLoginSuccessful"></class>
         </classes>
     </test>
 

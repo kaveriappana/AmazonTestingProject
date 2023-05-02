@@ -3,13 +3,13 @@
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="C:\Users\kaveri.appana\IdeaProjects\AmazonTestingProject\pom.xml(failed)">
     <classes>
-      <class name="TC001_ValidateLoginSuccessful">
+      <class name="TC004_SearchOnSelected">
         <methods>
           <include name="close"/>
           <include name="setUp"/>
-          <include name="testSuccessfulLogin"/>
+          <include name="searchonpreffered"/>
         </methods>
-      </class> <!-- TC001_ValidateLoginSuccessful -->
+      </class> <!-- TC004_SearchOnSelected -->
     </classes>
   </test> <!-- C:\Users\kaveri.appana\IdeaProjects\AmazonTestingProject\pom.xml(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

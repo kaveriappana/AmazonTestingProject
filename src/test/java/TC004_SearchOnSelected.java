@@ -9,9 +9,7 @@ import java.util.logging.Logger;
 public class TC004_SearchOnSelected extends BaseTests{
     @Test
     public void searchonpreffered(){
-        Logger logger = Logger.getLogger("TC004_SearchOnSelected");
-        PropertyConfigurator.configure("C:\\Users\\kaveri.appana\\IdeaProjects\\AmazonTestingProject\\src\\main\\resources\\log4j.properties");
-        logger.info("This is to search on amazon application");
+
         Reporter.log("This is to search on amazon application");
         SearchOnSelected searchonselected = new SearchOnSelected(driver);
         searchonselected.searchindropdown();
