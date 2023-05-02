@@ -25,7 +25,6 @@ public class BaseTests {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\kaveri.appana\\IdeaProjects\\AmazonTestingProject\\src\\main\\resources\\chromedriver_win32 (3)\\chromedriver.exe");
         driver = new ChromeDriver();
-
         driver.get("https://www.amazon.com");
         driver.manage().window().maximize();
         System.out.println(driver.getTitle());
