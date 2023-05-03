@@ -3,8 +3,6 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import java.util.logging.Logger;
-
 public class LoginPage {
 
      WebDriver driver;
@@ -16,17 +14,20 @@ public class LoginPage {
     private By pass = By.cssSelector("input[id='ap_password']");
     private By sign =By.cssSelector("input[id='signInSubmit']");
 
-    Logger logger = Logger.getLogger("LoginPage.class");
+  //  Logger logger = Logger.getLogger("LoginPage.class");
+
     public LoginPage(WebDriver driver)
     {
         this.driver = driver;
     }
+    org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger("LoginPage.class");
     public void clicklink(){
         driver.findElement(hellosignin).click();
     }
     public void enteremail(String email)  {
-       logger.info("Enter email or phone number");
+        logger.info("Entering "+email+" in username field");
         driver.findElement(emailField).sendKeys(email);
+        logger.info("Entered"+email+" in username field");
 
     }
     public void clickLoginButton(){
@@ -35,11 +36,13 @@ public class LoginPage {
 
     }
     public void enterpassword(String password){
-        logger.info("Enter password");
+        logger.info("Entering "+password+" in username field");
         driver.findElement(pass).sendKeys(password);
+        logger.info("Entered "+password+" in username field");
     }
     public void clicksignin(){
         logger.info("Click signin button");
         driver.findElement(sign).click();
+        logger.info("User logged successfully");
     }
 }

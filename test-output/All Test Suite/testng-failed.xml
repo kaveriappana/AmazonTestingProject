@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="C:\Users\kaveri.appana\IdeaProjects\AmazonTestingProject\pom.xml(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestonChromeBrowser(failed)">
+    <parameter name="browsername" value="Chrome"/>
     <classes>
-      <class name="TC001_ValidateLoginSuccessful">
+      <class name="TC006_SignOut">
         <methods>
           <include name="close"/>
+          <include name="signout"/>
           <include name="setUp"/>
-          <include name="testSuccessfulLogin"/>
+          <include name="recordFailure"/>
         </methods>
-      </class> <!-- TC001_ValidateLoginSuccessful -->
+      </class> <!-- TC006_SignOut -->
     </classes>
-  </test> <!-- C:\Users\kaveri.appana\IdeaProjects\AmazonTestingProject\pom.xml(failed) -->
+  </test> <!-- TestonChromeBrowser(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

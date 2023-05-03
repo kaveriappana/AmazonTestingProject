@@ -1,11 +1,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name ="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:\Users\kaveri.appana\IdeaProjects\AmazonTestingProject\pom.xml">
+<suite name ="All Test Suite" parallel="tests" thread-count="2">
+    <test verbose="2" preserve-order="true" name="TestonChromeBrowser">
         <parameter name="browsername" value="Chrome"></parameter>
         <classes>
-            <class name="TC001_ValidateLoginSuccessful"></class>
-
+<!--            <class name="TC001_ValidateLoginSuccessful"></class>-->
+<!--            <class name="TC005_BuyAgainTab"></class>-->
+            <class name="TC006_SignOut"></class>
         </classes>
     </test>
+
+<!--    <test  name="TestonEdgeBrowser">-->
+<!--        <parameter name="browsername" value="Edge"></parameter>-->
+
+<!--        <classes>-->
+<!--            <class name="TC001_ValidateLoginSuccessful"></class>-->
+
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>

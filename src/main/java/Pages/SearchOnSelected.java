@@ -1,5 +1,6 @@
 package Pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -16,11 +17,14 @@ public class SearchOnSelected {
     private By laptop = By.linkText("Laptops");
     private By text1 = By.linkText("HP Envy Laptops");
     private By linktext1 = By.linkText("Visit the HP Store");
+
+    Logger logger = Logger.getLogger("SearchOnSelected.class");
     public SearchOnSelected(WebDriver driver)
     {
         this.driver = driver;
     }
     public void searchindropdown(){
+        logger.info("Enter product to be searched");
         driver.findElement(searchin).click();
     }
     public void entertextinsearch(String text){
@@ -39,9 +43,12 @@ public class SearchOnSelected {
     public void clickgobutton(){
 
         driver.findElement(go).click();
+        logger.info("search successfull");
     }
     public void  clicktext(){
+        logger.info("Clicking link of the searched product");
         driver.findElement(linktoclick).click();
+        logger.info("Getting HP Store link successfully");
     }
     public void clicklink(){
          driver.findElement(linktext1).click();

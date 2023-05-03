@@ -1,0 +1,11 @@
+2023-11-03 18:05:982 INFO  class:27 - logging started
+2023-11-03 18:05:935 INFO  class:28 - Entering 6301274046 in username field
+2023-11-03 18:05:03 INFO  class:30 - Entered6301274046 in username field
+2023-11-03 18:05:03 INFO  class:34 - click continue button
+2023-11-03 18:05:808 INFO  class:39 - Entering Kaveri@123 in username field
+2023-11-03 18:05:852 INFO  class:41 - Entered Kaveri@123 in username field
+2023-11-03 18:05:852 INFO  class:44 - Click signin button
+2023-11-03 18:05:918 INFO  class:46 - User logged successfully
+2023-11-03 18:05:919 INFO  class:20 - Hovering on hello text
+2023-11-03 18:05:430 INFO  class:27 - Clicking sign out button
+2023-11-03 18:05:262 INFO  class:29 - sign out successfully done

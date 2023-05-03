@@ -16,11 +16,12 @@ public class SearchOnAmazon {
 
     private By link =By.linkText("Apple iPhone 12 Mini, 128GB, Black - Unlocked (Renewed)");
 
-    Logger logger = Logger.getLogger("SearchOnAmazon.class");
+    org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger("LoginPage.class");
     public SearchOnAmazon(WebDriver driver)
     {
         this.driver = driver;
     }
+   // Logger logger = Logger.getLogger("SearchOnAmazon.class");
 
     public void searchtext(String text){
         logger.info("Enter searching product");
@@ -32,11 +33,14 @@ public class SearchOnAmazon {
         driver.findElement(button).click();
     }
     public void lowandhighprice(String data1,String data2 ){
+        logger.info("Entering range to search product");
         driver.findElement(value1).sendKeys(data1);
         driver.findElement(value2).sendKeys(data2);
     }
     public void clikongo(){
+        logger.info("search the product");
         driver.findElement(gobutton).click();
+        logger.info("product searched successfully");
     }
     public void clickonmobilename(){
         driver.findElement(link).click();
